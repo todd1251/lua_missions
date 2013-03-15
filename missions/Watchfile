@@ -1,0 +1,1 @@
+watch('.*\.lua') { |md| system("clear; lua missions.lua") }

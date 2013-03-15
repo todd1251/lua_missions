@@ -1,0 +1,2 @@
+#!/bin/sh
+watchr Watchfile
