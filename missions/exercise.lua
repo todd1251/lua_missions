@@ -9,6 +9,15 @@
 
 -- INSERT YOUR CODE HERE
 
+local s = getmetatable("").__index
+
+s.starts_with = function(self, prefix)
+    return self:sub(1, prefix:len()) == prefix
+end
+
+s.ends_with = function(self, suffix)
+    return self:sub(self:len() - suffix:len() + 1, self:len()) == suffix
+end
 
 -- END OF CODE INSERT
 
